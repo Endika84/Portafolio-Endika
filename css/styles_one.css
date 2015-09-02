@@ -304,3 +304,29 @@ header img{
 		padding-left: 100px;
 	}
 }
+
+.navbar-toggle .icon-bar:nth-of-type(2) {
+}
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition: all 700ms ease;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(1) {
+    top: 6px;
+    transform: rotate(45deg);
+    background-color: orange;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(3) {
+    background-color: transparent;
+    opacity: 0;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(2) {
+    top: 6px;
+    transform: rotate(-45deg);
+    background-color: #fff;
+}
+.navbar-toggle.active .icon-bar:nth-of-type(4) {
+    top: -6px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
